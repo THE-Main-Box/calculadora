@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <link rel="stylesheet" href="/style.css">
     <script src="/script.js" defer></script>
+    <script src="/operations.js" ></script>
 </head>
 <body>
     <div>
@@ -15,7 +15,11 @@
             <br>
             <label for="secondN">segundos numeros</label>
             <input type="number" name="secondN" id="secondN">
-            <button id="calc">calcular</button>
+            <br>
+            <label>operação</label>
+            <button onclick="help()">?</button>
+            <br>
+            <button onclick="contar()">calcular</button>
         </form>
     </div>
 </body>
