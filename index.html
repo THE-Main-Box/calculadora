@@ -1,26 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <link rel="stylesheet" href="/style.css">
     <script src="/script.js" defer></script>
-    <script src="/operations.js" ></script>
+    <script src="/operations.js"></script>
 </head>
+
 <body>
-    <div>
-        <form>
-            <label for="firstN">primeiros numeros</label>
-            <input type="number" name="firstN" id="firstN">
-            <br>
-            <label for="secondN">segundos numeros</label>
-            <input type="number" name="secondN" id="secondN">
-            <br>
-            <label>operação</label>
-            <button onclick="help()">?</button>
-            <br>
-            <button onclick="contar()">calcular</button>
-        </form>
+    <form action="">
+
+        <div id="tabela">
+            <p>
+            <button>AC</button>
+            <button>()</button>
+            <button>%</button>
+            <button>/</button>
+        </p>
+        <p>
+            <input type="button" value="7">
+            <input type="button" value="8">
+            <input type="button" value="9">
+            <button>X</button>
+        </p>
+        <p>
+            <input type="button" value="4">
+            <input type="button" value="5">
+            <input type="button" value="6">
+            <button>-</button>
+        </p>
+        <p>
+            <input type="button" value="1">
+            <input type="button" value="2">
+            <input type="button" value="3">
+            <button>+</button>
+        </p>
+        <p>
+            <input type="button" value="0">
+            <input type="button" value="0">
+            <button><=</button>
+            <button>=</button>
+        </p>
     </div>
+
+    </form>
 </body>
+
 </html>

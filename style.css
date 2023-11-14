@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+#tabela{
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    place-content: center;
+}
+
+#tabela input,button{
+    height: 40px;
+    width: 40px;
+}
