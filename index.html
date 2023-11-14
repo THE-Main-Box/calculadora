@@ -7,7 +7,6 @@
     <title>Calculator</title>
     <link rel="stylesheet" href="/style.css">
     <script src="/script.js" defer></script>
-    <script src="/operations.js"></script>
 </head>
 
 <body>
@@ -17,37 +16,36 @@
 
         <div id="tabela">
             <div id="answer">
-            <h3>1</h3>
+            <h3 id="resposta"></h3>
         </div>
             <p>
-            <button>AC</button>
-            <button>()</button>
-            <button>%</button>
-            <button>/</button>
+            <button onclick="clean()">AC</button>
+            
+            <button onclick="insert('/')">/</button>
         </p>
         <p>
-            <input type="button" value="7" class="Numerals">
-            <input type="button" value="8" class="Numerals">
-            <input type="button" value="9" class="Numerals">
-            <button>X</button>
+            <button onclick="insert('7')">7</button>
+            <button onclick="insert('8')">8</button>
+            <button onclick="insert('9')">9</button>
+            <button onclick="insert('*')">X</button>
         </p>
         <p>
-            <input type="button" value="4" class="Numerals">
-            <input type="button" value="5" class="Numerals">
-            <input type="button" value="6" class="Numerals">
-            <button>-</button>
+            <button value="4" onclick="insert('4')">4</button>
+            <button value="5" onclick="insert('5')">5</button>
+            <button value="6" onclick="insert('6')">6</button>
+            <button onclick="insert('-')">-</button>
         </p>
         <p>
-            <input type="button" value="1" class="Numerals">
-            <input type="button" value="2" class="Numerals">
-            <input type="button" value="3" class="Numerals">
-            <button>+</button>
+            <button type="button" value="1" onclick="insert('1')">1</button>
+            <button type="button" value="2" onclick="insert('2')">2</button>
+            <button type="button" value="3" onclick="insert('3')">3</button>
+            <button onclick="insert('+')">+</button>
         </p>
         <p>
-            <input type="button" value="0" class="Numerals">
-            <input type="button" value="," class="Numerals">
-            <button><=</button>
-            <button>=</button>
+            <button type="button" value="0" onclick="insert('0')">0</button>
+            <button type="button" value="." onclick="insert('.')">.</button>
+            <button onclick="back()"><=</button>
+            <button onclick="calculo()">=</button>
         </p>
     </div>
 
